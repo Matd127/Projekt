@@ -5,31 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Kurs tworzenia muzyki elektronicznej</title>
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <div id="logo"><a href="#">Kurs XYZ</a></div>
+        <header class="header">
+            <div id="logo"><a href="#">XYZ</a></div>
             <a href="">Nasza oferta</a> 
             <a href="">O nas</a> 
             <a href="">Dane kontaktowe</a> 
             <a href="">Formularz</a> 
         </header>
         <article>
-           <div class="about"><div id="text">Marzysz o tworzeniu własnej muzyki, ale nie wiesz od czego zacząć?</div></div>
+           <div class="about">
+               <div class="text">Marzysz o tworzeniu własnej muzyki, ale nie wiesz od czego zacząć? </div>
+               <div class="text">A może chcesz udoskonalić swoje umiejętności?</div>
+               <div class="text2"></div>
+        </div>
            <div class="scrolldown">
+               <a href="#2">
                 <div class="scrollicon">
                 <div class="icon-scroll"></div>
                 </div>
-                <div class="more">Dowiedz się więcej!</div>
+                <div class="more">Kliknij, lub przesuń w dół by poznać więcej informacji</div>
+            </a>
            </div>
         </article>
     </div>
-    <div class="container2">
+    <div class="container2" id="2">
+        <div class="offer">
+            <div class="title">Nasze kursy z pewnością powinny cię zainteresować</div>
+            <div class="tabs"> 
+                <div class="box">
+                    <div class="info">Produkcja muzyczna</div>
+                        <ul>
+                            <li>Naukę rozpoczniesz od poznania fundamentów, czyli teorii muzyki</li>
+                            <li>Nabędziesz praktyczną wiedzę z zakresu obsługi programu DAW, w tym wirtualnych syntezatorów oraz efektów</li>
+                            <li>Dowiesz się jak zaimplementować swoje muzyczne pomysły w programie</li>
+                            <li>Poznasz sprzęt od strony fizycznej, a dokładniej jak korzystać z kontrolera midi</li>
+                        </ul>
+                </div>
 
+                <div class="box">
+                    <div class="info">Miks i Mastering</div>
+                </div>
+                <div class="box">
+                    <div class="info">Wokal</div>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+    <script src="scripts.js"></script>
 </body>
 </html>
