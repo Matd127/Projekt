@@ -13,10 +13,9 @@
     <div class="container">
         <header class="header">
             <div id="logo"><a href="#">XYZ</a></div>
-            <a href="">Nasza oferta</a> 
-            <a href="">O nas</a> 
-            <a href="">Dane kontaktowe</a> 
-            <a href="">Formularz</a> 
+            <a href="#2">Nasza oferta</a> 
+            <a href="#3">Galeria</a> 
+            <a href="#4">Kontakt</a> 
         </header>
         <article>
            <div class="about">
@@ -34,6 +33,7 @@
            </div>
         </article>
     </div>
+
     <div class="container2" id="2">
         <div class="offer">
             <div class="title">Nasze kursy z pewnością powinny cię zainteresować</div>
@@ -50,14 +50,119 @@
 
                 <div class="box">
                     <div class="info">Miks i Mastering</div>
+                    <ul>
+                        <li>Na tym kursie pozyskasz niezbędną wiedzę i umiejętności do miksowania muzyki</li>
+                        <li>Nabędziesz praktyczną wiedzę z obsługi niezbędnych wtyczek, a konkretnie korektorów, kompresorów i limiterów</li>
+                        <li>Dzięki pozyskanej wiedzy sprawisz, że muzyka zabrzmi o wiele lepiej </li>
+                    </ul>
                 </div>
                 <div class="box">
-                    <div class="info">Wokal</div>
+                    <div class="info">Produkcja muzyczna + Wokal</div>
+                    <ul>
+                        <li>Nabędziesz wiedzę i umiejętności łączenia własnego wokalu z melodią</li>
+                        <li>Poznasz narzędzia zarówno programowe jak i fizyczne przeznaczone do korekty dźwięku</li>
+                        <li>Nauczysz się także dobierania odpowiedniej barwy swojego głosu</li>
+                    </ul>
                 </div>
             </div>
         </div>
+
+        <div class="cinf">
+
+            <div class="tab">
+                <div class="title">DAW</div>
+                <div class="text">Pierwsza przygoda z DAW? Nie ma problemu! Wspólnie dobierzemy dla ciebie najelpsze oprogramowanie. Posiadane przez nas oprogramowanie to: FL Studio, Ableton, Cubecase</div>
+            </div>
+            <div class="tab">
+                <div class="title">Nasz kurs</div>
+                <div class="text">Nasz kurs odbywa się w 5 osobowych grupach. Każdy ma dostęp do własnego stanowiska komputerowego wraz z niezbędnym sprzętem i oprogramowaniem. Na czas trwania kursu otrzymujesz dostęp do oprogramowania w którym się uczysz w pełnej wersji.</div>
+                
+            </div>
+            <div class="tab">
+                <div class="title">Płatność</div>
+                <div class="text">Cena naszego kursu ustalana jest indywidualnie. Hołdujemy także płatności ratalne. By uzyskać więcej informacji wypełnij formularz zgłoszeniowy.</div>
+            </div>
+            <div class="tab">
+                <div class="title">Wyposażenie</div>
+                <div class="text">Mamy do dyspozycji dobrze wyposażone studio, a także wysokiej jakości sprzęt, tak aby umożliwić komfortową naukę bez jakichkolwiek ograniczeń. </div>
+            </div>
+            <div class="tab">
+                <div class="title">Indywidualny kurs</div>
+                <div class="text">Grupowe kursy nie są dla ciebie odpowiednie? Mamy także na to rozwiązanie. Oferujemy także kursy indywidualne. Jeśli taka forma cię interesuje zaznacz to w formularzu kontakowym.</div>
+            </div>
+            
+        </div>
     </div>
 
+    <div class="container3" id="3">
+        <div class="title">Sprzęt, którym dysponujemy</div>
+
+    <div class="slideshow-container">
+
+        <div class="slides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../img/img1.jpg">
+        </div>
+        
+        <div class="slides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../img/img2.jpg">
+        </div>
+        
+        <div class="slides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../img/img3.jpg">
+        </div>
+        
+        <a class="previous" onclick="plus(-1)">&#10094;</a>
+        <a class="next" onclick="plus(1)">&#10095;</a>
+        
+        </div>
+        <br>
+    
+        
+    </div>
+
+    <div class="container4" id="4">
+
+        <div class="form">
+                <form action="" name="Form" onsubmit="return validate()">
+                    <h2>Skontaktuj się z nami</h2>
+                    <p>Jeśli zainteresował cię nasz kurs bądź chcesz zadać pytanie.</p>
+                    <input type="text" name="Name" id="imie" placeholder="Imię*">
+
+                    <p class="error" id="im"></p>
+                    <input type="text" name="" id="email" placeholder="E-mail*">
+
+                    <p class="error" id="mail"></p>
+                    <input type="text" name="" id="" placeholder="Numer telefonu*">
+                    <p class="error" id="nr"></p>
+
+                    <p><input type="checkbox" name="" id="">Produkcja muzyczna
+                    <input type="checkbox" name="" id="">Miks i Mastering
+                    <input type="checkbox" name="" id="">Produkcja muzyczna + Wokal</p>
+
+                    <label for="">Wiadomość</label>
+                    <textarea name=""  id="" cols="30" rows="10" ></textarea>
+                    <input type="submit" value="Zapisz się">
+                    <span id="success"> </span>
+                    <p>*Pola wymagane</p>
+                </form>
+    
+        </div>
+
+        <div class="aboutus">
+            <p>Adres</p>
+            <div>ul. Świętego Filipa 17 31-150 Kraków</div> 
+
+            <p>Telefon</p>
+            <div>123 456 789</div>
+            <div>000 000 000</div>
+
+            <p>E-mail abc@xyz.pl</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9673917477057!2d19.93895991593404!3d50.06817232271623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b053d076b5d%3A0x3c2561cb07bc3dd2!2sWy%C5%BCsza%20Szko%C5%82a%20Ekonomii%20i%20Informatyki%20w%20Krakowie!5e0!3m2!1spl!2spl!4v1623961949036!5m2!1spl!2spl" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>

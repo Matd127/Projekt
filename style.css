@@ -10,7 +10,7 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color: #212529;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.727),rgba(0, 0, 0, 0.7)) ,url(../img/back.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.727),rgba(0, 0, 0, 0.7)),url(../img/back.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     fill-opacity: unset;
@@ -29,6 +29,7 @@ header{
     position: fixed;
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -45,6 +46,7 @@ header.active{
     position: fixed;
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -155,8 +157,7 @@ article{
 
 .container2{
     width: 100%;
-    height: 100vh;
-    background-color: #212529;
+    min-height: 100vh;
     color: rgb(165, 162, 162);
 
 }
@@ -164,8 +165,8 @@ article{
 .offer{
     padding-top: 25px;
     width: 100%;
-    min-height: 70vh;
-    background-color: rgb(160, 160, 160);
+    min-height: 65vh;
+    background-color: rgb(97, 95, 95);
 }
 
 .offer .title{
@@ -179,6 +180,7 @@ article{
 .tabs{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
     padding-top: 5px;
@@ -190,10 +192,15 @@ article{
     border-bottom: 3px solid rgb(45, 45, 250);
     background-color: #333;
     box-shadow: 0 10px 40px rgba(0, 0, 0,.5);
+    border-radius: 4px;
+}
+
+.tabs .box:hover{
+    border-bottom: 3px solid rgb(250, 45, 45);
 }
 
 .tabs .box .info{
-    padding-top: 10px;
+    padding: 10px;
     font-size: 20px;
     font-weight: 700;
 }
@@ -205,4 +212,241 @@ ul{
 }
 li{
     padding: 12px;
+}
+
+.cinf{
+    display: flex;
+    min-height: 35vh;
+    width: 100%;
+    background-color: #212529;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cinf .tab{
+    width: 250px;
+    text-align: center;
+}
+
+.cinf .tab .title{
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: 3px solid rgb(1, 228, 209);
+    border-width: thick;
+}
+
+.cinf .tab .title:hover {
+    animation: 3s multicolor infinite;
+}
+@keyframes multicolor {
+    0% {
+        border-bottom: 3px solid rgb(14, 49, 250);
+        border-width: thick;
+    }
+    25% {
+        border-bottom: 3px solid #2bff00;
+        border-width: thick;
+    }
+    50% {
+        border-bottom: 3px solid #ffd000;
+        border-width: thick;
+    }
+    75% {
+        border-bottom: 3px solid #2bff00;
+        border-width: thick;
+    }
+    100% {
+        border-bottom: 3px solid rgb(14, 49, 250);
+        border-width: thick;
+    }
+}
+
+.cinf .tab .text{
+    font-size: 15px;
+    padding: 10px;
+    
+}
+
+.container3{
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(165, 162, 162);
+    text-align: center;
+    background-color: rgb(97, 95, 95);
+}
+
+.container3 .title{
+    font-size: 20px;
+    padding-top: 70px;
+    padding-bottom: 25px;
+    font-weight: 750;
+    color: rgb(32, 30, 30);
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .slideshow-container img{
+      width: 100%;
+      height: 800px;
+  }
+  
+  .slideshow-container .previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .previous{
+      left: 0;
+  }
+
+  .previous:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .fade .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .container4{
+      min-height: 50vh;
+      background-color: red;
+      display: flex;
+  }
+
+  .container4 .form{
+    width: 50%;
+    background-color: #212529;
+    flex-wrap: wrap;
+  }
+  .container4 .form form{
+      font-size: 15px;
+      padding: 25px;
+      color: rgb(151, 151, 151);
+  }
+  .container4 .form h2{
+    color: rgb(102, 102, 102);
+}
+  
+  .container4 .form label, p{
+      display: block;
+  }
+
+  .container4 p{
+      padding-top: 8px;
+  }
+  .container4 .aboutus{
+      width: 50%;
+      background-color:#212529;
+      padding: 35px;
+      color: rgb(151, 151, 151);
+      text-align: center;
+  }
+
+  .aboutus p{
+      font-weight: 600;
+    }
+  textarea{
+      resize: none;
+      color: rgb(151, 151, 151);
+      width: 600px;
+  }
+  textarea:focus{
+      outline: none;
+      animation: 1s changecolor infinite;
+  }
+
+  input[type=text] {
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: #212529;
+    width: 300px;
+    color: rgb(151, 151, 151);
+    display: block;
+  }
+  input[type=text]:focus{
+    outline: none;
+    animation: 1s changecolor infinite;
+  }
+  input[type=checkbox]{
+      background: #212529;
+  }
+
+  input[type=submit]{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: block;
+  }
+  .error{
+      font-size: 10px;
+      color: red;
+  }
+
+  @keyframes changecolor{
+      0%{
+        border-bottom: 2px solid rgb(38, 0, 255);
+      }
+      100%{
+        border-bottom: 2px solid rgb(38, 0, 255);
+      }
+  }
+
+  textarea{
+    border: none;
+    border-bottom: 2px solid gray;
+    background: #212529;
+  }
+
+  @media (max-width: 600px) {
+    .about .text{
+        font-size: 25px;
+    }
 }
