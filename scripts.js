@@ -42,9 +42,56 @@ function showSlides(n)
 
 
 function validate(){
-  var x = document.getElementById('imie').value;
+  var name = document.getElementById('imie').value;
+  var mail = document.getElementById('email').value;
+  var nr = document.getElementById('numer').value;
 
-  if(imie=="")
-    alert("Wpisz coś!");
+  var ok, ok1, ok2;
+
+  
+
+  if(name=="")
+    {
+      document.getElementById('im').innerHTML = "To pole jest wymagane."
+      ok = false;
+    }
+  else
+    {
+      document.getElementById('im').innerHTML = "";
+      ok = true;
+    }
+
+
+  if(mail=="")
+  {
+    document.getElementById('mail').innerHTML = "To pole jest wymagane."
+    ok1 = false;
+  }
+  else
+  {
+    document.getElementById('mail').innerHTML = ""
+    ok1 = true;
+  }
+    
+
+  if(nr=="")
+  {
+    document.getElementById('nr').innerHTML = "To pole jest wymagane."
+    ok2 = false;
+  }
+  else if(isNaN(nr) || nr.length!=9){
+    document.getElementById('nr').innerHTML = "Numer telefonu jest niepoprawny"
+    ok2 = false;
+  }
+  else
+  {
+    document.getElementById('nr').innerHTML = ""
+    ok2 = true;
+  }
+    
+  
+  if(ok, ok1, ok2)
+    document.getElementById('success').innerHTML = "Pomyślnie wysłano zgłoszenie. Niebawem się skontaktujemy."
+    
 }
 

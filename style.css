@@ -349,14 +349,15 @@ li{
 
   .container4{
       min-height: 50vh;
-      background-color: red;
       display: flex;
+      width: 100%;
+      flex-wrap: wrap;
   }
 
   .container4 .form{
+    min-height: 50vh;
     width: 50%;
     background-color: #212529;
-    flex-wrap: wrap;
   }
   .container4 .form form{
       font-size: 15px;
@@ -377,7 +378,6 @@ li{
   .container4 .aboutus{
       width: 50%;
       background-color:#212529;
-      padding: 35px;
       color: rgb(151, 151, 151);
       text-align: center;
   }
@@ -399,7 +399,7 @@ li{
     border: none;
     border-bottom: 2px solid gray;
     background-color: #212529;
-    width: 300px;
+    width: 40%;
     color: rgb(151, 151, 151);
     display: block;
   }
@@ -411,8 +411,8 @@ li{
       background: #212529;
   }
 
-  input[type=submit]{
-    background-color: #4CAF50; /* Green */
+  .btn{
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -443,10 +443,20 @@ li{
     border: none;
     border-bottom: 2px solid gray;
     background: #212529;
+    width: 75%;
   }
 
   @media (max-width: 600px) {
     .about .text{
         font-size: 25px;
     }
+}
+
+#success{
+    color: green;
+}
+
+iframe{
+    width: 75%;
+    height: 30vh;
 }
